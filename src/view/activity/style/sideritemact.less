@@ -1,0 +1,109 @@
+.activity-slideitem{
+      display: flex;
+      flex-direction:column;
+      padding-right: 12px;
+
+  
+    .am-list{
+      height: 100%;
+      display: flex;
+      flex-direction:column;
+      .am-list-header{
+        position: relative;
+          width: 100%;
+           height: 100%;
+        flex:auto;
+        min-height: 0;
+        padding-top: 0px;
+
+        .activity-shop-imgwrap{
+          position: relative;
+           width: 100%;
+           height: 100%;
+           .limitmember{
+            position: absolute;
+            right: 5px;
+            bottom: 0px;
+           }
+          .am-list-content{
+            text-align: center;
+          .periods{
+            text-align: center;
+            border: 3px solid #ccc;
+             border-radius:50%;
+            display: inline-block;
+            padding:  0 20px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            &:before {
+               content: "";
+                position: absolute;
+                top: 50%;
+                left: -30px;
+                 transform: translateY(-50%);
+                 width: 7px;
+                 height:7px;
+                 background:#ccc;
+                border-radius:50%;
+            }
+             &:after {
+               content: "";
+                position: absolute;
+                top: 50%;
+                right: -30px;
+                 transform: translateY(-50%);
+                 width: 7px;
+                 height:7px;
+                 background:#ccc;
+                border-radius:50%;
+            }
+
+          }
+        }
+          .img-wrap {
+            display: flex;
+            width: 100%;
+            height: 95%;
+            img{
+               width: 100%;
+              // height: 100%;
+            }
+          }
+        }
+      }
+      .am-list-body{
+      height: 170px;
+        flex:none;
+        .ready-star {
+          overflow: visible;
+          
+              img{
+                 width: 90px;
+                height: 90px;
+              }
+            .activity-count{
+              .am-flexbox-item{
+                text-align: center;
+              }
+            }   
+         
+        }
+
+
+      }
+      .am-list-footer{
+        // height: 50px;
+        flex:none;
+        .activity-shop-renderfooter{
+          padding: 9px;
+          padding-bottom: 0px;
+         
+         .join-button{
+          padding: 1px 30px;
+         }
+        }
+      }
+
+    }
+}
